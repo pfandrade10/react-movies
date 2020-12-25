@@ -24,7 +24,7 @@ const Playlist = () => {
                   <h5 className="card-title"> {movie.title} </h5>
                 </div>
               </Link>
-              <button style={{border: 'none', backgroundColor:"#3d3d3d", color: "white", borderRadius:"none"}} className="btn btn-outline-dark" onClick={() => dispatch(removePlaylist(index))}>
+              <button style={{border: 'none', backgroundColor:"#3d3d3d", color: "white", borderRadius:"none"}} className="btn-outline-dark card-button-playlist" onClick={() => dispatch(removePlaylist(index))}>
                 Remover
               </button>
             </article>

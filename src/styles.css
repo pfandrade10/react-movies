@@ -6,3 +6,7 @@
 #root{
   background-color: #3d3d3d;
 }
+
+.card-button-playlist{
+  border-radius: 0px !important;
+}
