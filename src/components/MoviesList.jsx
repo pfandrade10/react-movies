@@ -17,7 +17,7 @@ export const MoviesList = () => {
         <MoviesListHeader page={page} />
         <MoviesListContainer>
           {pages[page].map((movie, index) => (
-            <Link key={index} to={`/movies/${movie.id}`}>
+            <Link key={index} to={`/movies/${movie.id}`} style={{color:"white", textDecoration:"none" }}>
               <MoviesListCard className="card">
                 <img src={`http://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
                 <div className="card-body">

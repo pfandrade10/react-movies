@@ -16,14 +16,15 @@ export const MovieDetail = (props) => {
     !movies[id]
       ? <Loading />
       : <>
+      <div style={{backgroundColor: '#3d3d3d', height:'100%'}}>
         <MoviesHeaderContainer>
           <Link to={'/'}>
-            <button className="btn btn-outline-dark">
-              Return <ArrowLeft />
+            <button style={{border: 'none', color:'white' }} className="btn btn-outline-dark">
+              Voltar <ArrowLeft />
             </button>
           </Link>
-          <button className="btn btn-outline-dark" onClick={() => dispatch(insertPlaylist(movies[id]))}>
-            Playlist <BookmarkInsert />
+          <button style={{border: 'none', color:'white' }} className="btn btn-outline-dark" onClick={() => dispatch(insertPlaylist(movies[id]))}>
+            Adicionar na Playlist <BookmarkInsert />
           </button>
         </MoviesHeaderContainer>
         <MoviesInfoCard className="card">
@@ -36,6 +37,7 @@ export const MovieDetail = (props) => {
             <a href={`https://www.imdb.com/title/${movies[id].imdb_id}`}> IMDB Page </a>
           </div>
         </MoviesInfoCard>
+        </div>
       </>
   );
 }

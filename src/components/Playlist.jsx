@@ -12,19 +12,20 @@ const Playlist = () => {
 
   return (
     !playlist.length
-      ? <h4 className="pa4 tc i"> Empty playlist </h4>
+    
+      ? <div style={{backgroundColor:"#303030", color:"white", height:"100%"}}><h4 className="pa4 tc"> Você não tem filmes em sua Playlist!</h4></div>
       : <>
         <MoviesListContainer>
           {playlist.map((movie, index) => (
-            <article key={index} className="card h-100 flex flex-column">
-              <Link to={`/movies/${movie.id}`} className="pointer" style={{ flexGrow: '1' }}>
+            <article key={index} className="card h-100 flex flex-column"  style={{border: 'none'}}>
+              <Link to={`/movies/${movie.id}`} className="pointer" style={{ flexGrow: '1', color:"white", textDecoration:"none" }}>
                 <img src={`http://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
-                <div className="card-body">
+                <div className="card-body" style={{border: 'none', backgroundColor:"#3d3d3d"}}>
                   <h5 className="card-title"> {movie.title} </h5>
                 </div>
               </Link>
-              <button className="btn btn-outline-dark" onClick={() => dispatch(removePlaylist(index))}>
-                Playlist <BookmarkRemove />
+              <button style={{border: 'none', backgroundColor:"#3d3d3d", color: "white", borderRadius:"none"}} className="btn btn-outline-dark" onClick={() => dispatch(removePlaylist(index))}>
+                Remover
               </button>
             </article>
           ))}

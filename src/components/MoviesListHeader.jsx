@@ -10,11 +10,11 @@ export const MoviesListHeader = ({ page }) => {
   return (
     <>
       <MoviesHeaderContainer>
-        <button className="btn btn-outline-dark" onClick={() => dispatch(nextPage())}>
+        <button style={{border: 'none', color:'white' }} className="btn btn-outline-dark" onClick={() => dispatch(nextPage())}>
           <ArrowLeft />
         </button>
-        <input type="text" className="form-control" disabled value={page} style={{ width: '3rem', textAlign: 'center' }} />
-        <button className="btn btn-outline-dark" onClick={() => dispatch(prevPage())}>
+        <input type="text" className="form-control" disabled value={page} style={{ width: '3rem', textAlign: 'center', border:"none", color:"white", background:"#303030" }} />
+        <button style={{border: 'none', color:'white' }} className="btn btn-outline-dark" onClick={() => dispatch(prevPage())}>
           <ArrowRight />
         </button>
       </MoviesHeaderContainer>

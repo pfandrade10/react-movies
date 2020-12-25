@@ -6,12 +6,11 @@ const TopBar = () => {
   return (
     <>
       <TopBarContainer className="navbar">
-        <TopBarLogo> React Movies </TopBarLogo>
         <Link to="/movies" style={{ textDecoration: 'none' }}>
-          <TopBarLink> All Movies </TopBarLink>
+          <TopBarLink> Filmes </TopBarLink>
         </Link>
         <Link to="/playlist" style={{ textDecoration: 'none' }}>
-          <TopBarLink> Playlist </TopBarLink>
+          <TopBarLink> Minha Playlist </TopBarLink>
         </Link>
       </TopBarContainer>
     </>
