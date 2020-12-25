@@ -16,7 +16,7 @@ export const MovieDetail = (props) => {
     !movies[id]
       ? <Loading />
       : <>
-      <div style={{backgroundColor: '#3d3d3d', height:'100%'}}>
+      <div style={{backgroundColor: '#3d3d3d', height:"95.6vh"}}>
         <MoviesHeaderContainer>
           <Link to={'/'}>
             <button style={{border: 'none', color:'white' }} className="btn btn-outline-dark">

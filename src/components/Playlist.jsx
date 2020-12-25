@@ -13,7 +13,7 @@ const Playlist = () => {
   return (
     !playlist.length
     
-      ? <div style={{backgroundColor:"#303030", color:"white", height:"100%"}}><h4 className="pa4 tc"> Você não tem filmes em sua Playlist!</h4></div>
+      ? <div style={{backgroundColor:"#303030", color:"white", height:"95.6vh"}}><h4 className="pa4 tc"> Você não tem filmes em sua Playlist!</h4></div>
       : <>
         <MoviesListContainer>
           {playlist.map((movie, index) => (
